@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+
+<div>
+	<p>{{teaser}}</p>
+</div>
+
+
+<div>
+	<ul>
+		{{#each products}}
+		<li><a href="/products/show?clave={{clave}}">{{description}} - {{price}}</a></li>
+		{{/each}}
+	</ul>
+</div>

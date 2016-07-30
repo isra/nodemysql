@@ -1,0 +1,17 @@
+<h1>{{form.title}}</h1>
+
+<form action="/products/add" method="POST">
+	{{#each form.inputs}}
+		<div>
+			<label for="{{label.for}}">{{label.text}}</label>
+			<div>
+				<input type="text" name={{name}} id={{id}}/>
+			</div>
+		</div>
+	{{/each}}
+
+	<div>
+		<input type="submit" id={{form.button.id}} value={{form.button.value}}>
+	</div>
+
+</form>
